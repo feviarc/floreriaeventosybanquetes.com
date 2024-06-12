@@ -104,7 +104,7 @@
 			.logo{
 				margin-bottom: 5%;
 				margin-top: 15%;
-				width:100%;
+				width:85%;
 			}
 		}
 
@@ -1291,6 +1291,16 @@ div.caption span {
 
 #footer .copyright a {
 	border: none;
+}
+
+#footer .copyright  p:first-child {
+	font-weight: bolder;
+}
+
+#footer .copyright p span {
+	display: block;
+	font-size: 0.8rem;
+	line-height: 1rem;
 }
 
 #footer .copyright a img#developer {

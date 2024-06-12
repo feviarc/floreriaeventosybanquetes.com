@@ -68,7 +68,7 @@
 							</a>
 						</header>
 						<a class="thumbnail" href="images/arreglos/110.png" itemprop="contentUrl">
-							<img src="images/arreglos/thumbs/110.png" alt="Arreglo 110" itemprop="thumbnail"/>
+							<img data-src="images/arreglos/thumbs/110.png" alt="Arreglo 110" itemprop="thumbnail" loading="lazy"/>
 						</a>
 						<span>💐 Arreglo: 110</span>
 					</article>
@@ -80,7 +80,7 @@
 							</a>
 						</header>
 						<a class="thumbnail" href="images/arreglos/109.png" itemprop="contentUrl">
-							<img src="images/arreglos/thumbs/109.png" alt="Arreglo 109" itemprop="thumbnail"/>
+							<img data-src="images/arreglos/thumbs/109.png" alt="Arreglo 109" itemprop="thumbnail" loading="lazy"/>
 						</a>
 						<span>💐 Arreglo: 109</span>
 					</article>
@@ -92,7 +92,7 @@
 							</a>
 						</header>
 						<a class="thumbnail" href="images/arreglos/108.png" itemprop="contentUrl">
-							<img src="images/arreglos/thumbs/108.png" alt="Arreglo 108" itemprop="thumbnail"/>
+							<img data-src="images/arreglos/thumbs/108.png" alt="Arreglo 108" itemprop="thumbnail" loading="lazy"/>
 						</a>
 						<span>💐 Arreglo: 108</span>
 					</article>
@@ -104,7 +104,7 @@
 							</a>
 						</header>
 						<a class="thumbnail" href="images/arreglos/107.png" itemprop="contentUrl">
-							<img src="images/arreglos/thumbs/107.png" alt="Arreglo 107" itemprop="thumbnail"/>
+							<img data-src="images/arreglos/thumbs/107.png" alt="Arreglo 107" itemprop="thumbnail" loading="lazy"/>
 						</a>
 						<span>💐 Arreglo: 107</span>
 					</article>
@@ -116,7 +116,7 @@
 							</a>
 						</header>
 						<a class="thumbnail" href="images/arreglos/106.png" itemprop="contentUrl">
-							<img src="images/arreglos/thumbs/106.png" alt="Arreglo 106" itemprop="thumbnail"/>
+							<img data-src="images/arreglos/thumbs/106.png" alt="Arreglo 106" itemprop="thumbnail" loading="lazy"/>
 						</a>
 						<span>💐 Arreglo: 106</span>
 					</article>
@@ -128,7 +128,7 @@
 							</a>
 						</header>
 						<a class="thumbnail" href="images/arreglos/105.png" itemprop="contentUrl">
-							<img src="images/arreglos/thumbs/105.png" alt="Arreglo 105" itemprop="thumbnail"/>
+							<img data-src="images/arreglos/thumbs/105.png" alt="Arreglo 105" itemprop="thumbnail" loading="lazy"/>
 						</a>
 						<span>💐 Arreglo: 105</span>
 					</article>
@@ -140,7 +140,7 @@
 							</a>
 						</header>
 						<a class="thumbnail" href="images/arreglos/104.png" itemprop="contentUrl">
-							<img src="images/arreglos/thumbs/104.png" alt="Arreglo 104" itemprop="thumbnail"/>
+							<img data-src="images/arreglos/thumbs/104.png" alt="Arreglo 104" itemprop="thumbnail" loading="lazy"/>
 						</a>
 						<span>💐 Arreglo: 104</span>
 					</article>
@@ -152,7 +152,7 @@
 							</a>
 						</header>
 						<a class="thumbnail" href="images/arreglos/103.png" itemprop="contentUrl">
-							<img src="images/arreglos/thumbs/103.png" alt="Arreglo 103" itemprop="thumbnail"/>
+							<img data-src="images/arreglos/thumbs/103.png" alt="Arreglo 103" itemprop="thumbnail" loading="lazy"/>
 						</a>
 						<span>💐 Arreglo: 103</span>
 					</article>
@@ -164,7 +164,7 @@
 							</a>
 						</header>
 						<a class="thumbnail" href="images/arreglos/102.png" itemprop="contentUrl">
-							<img src="images/arreglos/thumbs/102.png" alt="Arreglo 102" itemprop="thumbnail"/>
+							<img data-src="images/arreglos/thumbs/102.png" alt="Arreglo 102" itemprop="thumbnail" loading="lazy"/>
 						</a>
 						<span>💐 Arreglo: 102</span>
 					</article>
@@ -176,7 +176,7 @@
 							</a>
 						</header>
 						<a class="thumbnail" href="images/arreglos/101.png" itemprop="contentUrl">
-							<img src="images/arreglos/thumbs/101.png" alt="Arreglo 101" itemprop="thumbnail"/>
+							<img data-src="images/arreglos/thumbs/101.png" alt="Arreglo 101" itemprop="thumbnail" loading="lazy"/>
 						</a>
 						<span>💐 Arreglo: 101</span>
 					</article>
@@ -187,12 +187,16 @@
 			<footer id="footer">
 				<div class="copyright">
 					<p>
-						VANESSA Arreglos & Flores (2024) <br>
-						Algunos de derechos reservados <br>
-						CC BY-NC 2.5 MX
+						VANESSA Arreglos & Flores (2024)
 					</p>
-					Sitio Web desarrollado por
-					<a href="https://oitsys.com" target="_blank"><img src="assets/img/Logo.OITSYS.aux.small.png" id="developer" alt="Logo OITSYS" title="Sitio Web desarrollado por OITSYS"></a>
+					<p>
+						<span>Algunos de derechos reservados</span>
+						<span>CC BY-NC 2.5 MX</span>
+					</p>
+					<p>
+						Sitio Web desarrollado por
+						<a href="https://oitsys.com" target="_blank"><img src="assets/img/Logo.OITSYS.aux.small.png" id="developer" alt="Logo OITSYS" title="Sitio Web desarrollado por OITSYS"></a>
+					</p>
 				</div>
 			</footer>
 
@@ -200,6 +204,7 @@
 		<script>
 			head.load(
 				"//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js",
+				"assets/js/lazy.js",
 				"assets/js/skel.min.js",
 				"assets/js/app.min.js",
 				"assets/css/style.css",
