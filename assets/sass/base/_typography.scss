@@ -1,10 +1,6 @@
-@import '../libs/vars';
-@import '../libs/functions';
-@import '../libs/mixins';
-
 ///
 /// Lens by HTML5 UP
-/// html5up.net | @n33co
+/// html5up.net | @ajlkn
 /// Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 ///
 
@@ -13,11 +9,11 @@
 	html {
 		font-size: 16pt;
 
-		@include breakpoint(xlarge) {
+		@include breakpoint('<=xlarge') {
 			font-size: 12pt;
 		}
 
-		@include breakpoint(large) {
+		@include breakpoint('<=large') {
 			font-size: 11pt;
 		}
 	}

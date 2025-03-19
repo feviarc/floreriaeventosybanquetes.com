@@ -1,10 +1,6 @@
-@import '../libs/vars';
-@import '../libs/functions';
-@import '../libs/mixins';
-
 ///
 /// Lens by HTML5 UP
-/// html5up.net | @n33co
+/// html5up.net | @ajlkn
 /// Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 ///
 
@@ -188,21 +184,21 @@
 			}
 		}
 
-		body.is-loading-1 & {
+		body.is-preload-1 & {
 			opacity: 0;
 		}
 
-		body.is-loading-2 & {
+		body.is-preload-2 & {
 			.slide {
 				opacity: 0;
 			}
 		}
 
-		@include breakpoint(large) {
+		@include breakpoint('<=large') {
 			width: calc(100% - #{_size(main-alt)});
 		}
 
-		@include breakpoint(medium) {
+		@include breakpoint('<=medium') {
 			width: 100%;
 
 			.inner {
@@ -229,7 +225,7 @@
 			}
 		}
 
-		@include breakpoint(small) {
+		@include breakpoint('<=small') {
 			.inner {
 				.toggle {
 					background-size: 32px 32px;
@@ -251,7 +247,7 @@
 			}
 		}
 
-		@include breakpoint(xsmall) {
+		@include breakpoint('<=xsmall') {
 			@include vendor('transition', ('opacity #{_duration(layout-alt)} ease'));
 			@include vendor('transition-delay', '0s');
 			opacity: 0;
